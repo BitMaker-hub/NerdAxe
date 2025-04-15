@@ -1,70 +1,62 @@
-```
-Open Source is Intrinsic to Bitcoin
-```
-# The bitaxeGamma
-bitaxe is a fully open source Bitcoin ASIC miner aimed at decentralizing mining. bitaxeGamma is the 5th major revision of the bitaxe that now includes the BM1370 ASIC from the Antminer S21 Pro
+[![](https://dcbadge.vercel.app/api/server/3E8ca2dkcC)](https://discord.gg/3E8ca2dkcC)
 
-![bitaxeUltra assembled](doc/gamma.png)
+# The Nerdaxe
+NerdAxe is a fork from bitaxe with fullcolor display graphics. NerdAxe is indented to be an upgrade board for these who have a NerdMiner and would like to have more powerful mining features without losing the NerdMiner essence. That's why NerdAxe is currently controlled by the common board used on Nerdminer project called TTGO-TDisplayS3.
+
+Currently exists two variants sepparated in two branches:
+- **Nerdaxe Gamma**: 1,2Th with a single chip BM1370. [Nerdaxe Gamma](https://github.com/BitMaker-hub/NerdAxe/tree/gamma-1%2C2Ths)
+- **Nerdaxe Ultra**: 0,5Th with a single chip BM1366. [Nerdaxe Ultra](https://github.com/BitMaker-hub/NerdAxe/tree/ultra-500Ghs)
+
+The following fork could not be possible without the previous work of @skot, @ben & bitaxe devs. [Check bitaxe project](https://bitaxe.org)
+
+Upgrade your NerdMiner experience throught this addon board and start playing with ASICs
+
+![NerdAxeUltra design](doc/NerdAxeGuithub.png)
 
 ## Goals
-- **Easy**: Just plug it in and mine Bitcoin over WiFi. No external computer needed.
-- **Practical**: low cost, low noise, low power, low maintenance. You can run this at home.
-- **ASIC Power**: High efficiency and hashrate, based on the latest and greatest Application Specific Integrated Circuits.
-- **Versatile**: Mine to any StratumV1 pool, Lottery mine, Solo mine, Or hack it to do whatever you want.
-- **Bitcoin Ethos**: Fully open source, permissionless and decentralized to support the worldwide freedom money.
+- **Plug&Play**: your NerdMiner board and convert it into a NerdAxe.
+- **Standalone**: can mine directly to your pool over WiFi. No External computer needed.
+- **Embedded**: low cost, low maintenance, high availability, high reliability, low power.
+- **ASIC**: working with most efficient ASIC chips from Bitmain - BM1370.
+- **Versatile**: solo/pool mining, autotune power/heat/efficiency.
+- **Open Source**: All design files are provided.
 
-## ASIC
-At the heart of the bitaxeGamma is a BM1370 Bitcoin mining ASIC from the Antminer S21 Pro from Bitmain. It's not open source.
+## Features
+- **TTGO-TDisplay** ESP32s3 wifi microcontroller display board
+- **Multiple Screens** to allow you see all the miner stats 
+- **TI TPS546D** buck regulator steps down the 5V input to power the BM1370
+- **Microchip EMC2101** PWM controls the fan and monitors tach output. Measuring internal die temp isn't working.
 
-- Bitmain claims the BM1370 has 15 J/TH efficiency. We can get pretty close to that with the BitaxeGamma
-- The Antminer S21 Pro has a nominal hashrate of 234 TH/s. There are 3 hashboards with 65 chips each, for a total of 195 chips. The bitaxeGamma has a single one of these chips. That means _about_ 1.2 TH/s per bitaxeGamma. Initial testing looks good!
-- The BM1370 is brand new and isn't available individually yet. The best place to get these chips is right out of a S21 Pro.
-- The BM1370 has a different footprint and pinout from the BM1368, BM1366, BM1397 and BM1387 in previous bitaxe.
+## Software & Firmware
+Nerdaxe firmware was forked from original ESP-Miner version and adapted to use TTGO board and LVGL as graphic interface lib. 
+Check it here -> [ESP-Miner Nerdaxe version](https://github.com/BitMaker-hub/ESP-Miner-NerdAxe)
 
-## Current Status
-- Prototype BitaxeGamma 600x have been built and are hashing! There might still be HW issues.
-- initial BM1370 firmware support has been added to [esp-miner](https://github.com/skot/esp-miner) This still needs some work.
-- Be sure to check the [HW issues](https://github.com/skot/bitaxe/issues) for known bugs, reworks and errata.
-- This is an _advanced_ build! You can do it, but if you're not looking for a project, it might be best to buy one pre-assembled from one of the [many sellers](https://bitaxe.org/legit.html). Check [Skot's method](assembly.md) of hand assembling PCBs.
+**Today** Nerdaxe is using the latest evolution of this firmware modified by @pmaxuw (creator of the NerdQaxe) and used for other multiple boards
+Current firmware -> [ESP-Miner Nerd\*axe version](https://github.com/shufps/ESP-Miner-NerdQAxePlus)
 
-## PCB Hardware
-This repo contains all of the design files for the PCB. [KiCAD](https://www.kicad.com) software is used. There is a BOM file for all of the components that get soldered to the PCB. 
+Flash the latest Nerdaxe firmware here: 
+- Go to flasher online tool: https://flasher.bitronics.store/ (recommend via Google Chrome incognito mode)
+- Nerd\*axe flasher online tool: https://shufps.github.io/nerdqaxe-web-flasher/  
 
-- Order PCBs from your favorite PCB shop, like [JLCPCB](https://jlcpcb.com), [SeeedStudio](https://www.seeedstudio.com/fusion_pcb.html), or [PCBWay](https://www.pcbway.com)
-    - Gerbers are in the `Manufacturing Files` dir. PCBs are 4-layer, 6mil trace/space and 0.3mm hole compatible. 1oz outer / 0.5oz inner layer thickness works well.
-    - Make sure to order stencils too. These are the "paste" layers in the gerbers folder. one for top and one for bottom.
-- All PCB parts except the ASIC are available from [DigiKey](https://www.digikey.com/en/products) and others. You can find Digikey part numbers on the DK tab of the BOM
+## The DIY area
 
-## Extra Hardware
-There are a few other hardware components that are needed for a complete bitaxe.
-
-- **Heatsink**
-	- [40x40mm heatsink and 5V fan](https://www.aliexpress.com/item/2251832861666365.html) from a random AliExpress seller. The fans are crap, but the heatsinks are good.  
-- **Fan**
-	- You **must** have active cooling on the bitaxe. The heatsink alone is not enough.
-	- The Bitaxe has a connector for a 4pin, 5V PWM fan. 40mm square, 20mm thick fans work nicely with the suggested heatsink. Make sure to get a 5V fan! 12V will not work.
-	- Upgrade your fan with the [Noctua NF-A4x10](https://noctua.at/en/nf-a4x10-5v-pwm) 5V 4-Pin fan for a much more pleasant experience.
-- **Thermal compound**
-	- Use a good quality thermal compound between the heatsink and ASIC. Kryonaut 
-- **Display**
-	- Supports 0.91" SSD1306-based I2C OLED Module. [Example Amazon seller](https://www.amazon.com/gp/product/B08ZY4YBHL)
-- **Power Supply**
-	- **5V DC Only!** Anything else will damage the Bitaxe. Be careful and double-check your power supply is 5V. Many other voltage power supplies use the same connector.
-	- [30W 5VDC Power supply](https://www.amazon.com/MTDZKJG-100-240V-Converter-Transformers-5-5x2-5mm/dp/B0CJHKS28K). The power supply needs to supply 3A (15W) and not drop below 5V. Often times you have to use a power supply rated for 25-30W to get this!
-	- The bitaxe uses a 5.5x2.1mm, center-positive barrel jack. 5.5x2.5mm plugs have been known to work.
-- **Stand**
-	- The PCB has corner mounting holes. You're going to want a stand to mount your Bitaxe. Many excellent 3D printed designs are available.
-
-## Firmware
-- The [ESP-Miner](https://github.com/skot/ESP-Miner) has initial support for the BM1370 ASIC. Improvements are ongoing.
+### Asic BM1370
+- The BM1370 is a undocumented SHA256 mining ASIC from Bitmain. It's mostly used in the Antminer S21pro/S21+
+- Bitmain claims the BM1370 has 0.021J/GH efficiency
+- The BM1370 is available (new) for around $60 each in small quantities.
+- The BM1370 has a different footprint and pinout from the MB1366, BM1368 in previous bitaxe.
 
 
+### Other components & build troubleshooting
+- BM1370 from NBTC on AliExpress
+- [40x40mm heatsink and 5V fan](https://www.aliexpress.com/item/2251832861666365.html) from a random AliExpress seller. At least half of these arrived broken in some way. But they are cheap and the working ones do keep the BM1387's nice and cool when used with some thermal compound.
+    - Swap this fan with the [Noctua NF-A4x10](https://noctua.at/en/products/fan/nf-a4x10-pwm) 5V 4-Pin fan for a much more pleasant experience.
+- Board is designed with [KiCad 8](https://www.kicad.org) design files
+- All of the parts on the board are listed in the KiCad BOM
+- Check out [building.md](building.md) for PCB ordering tips
+- Check out [assembly.md](assembly.md) for assembly tips
 
-### ESP32 Programming Requirements
-- As of the bitaxeUltra, all ESP32 programming is done through a USB-C cable and connector on the bitaxe. See [ESP-Miner](https://github.com/skot/ESP-Miner) for more details.
+### Power Supply Requirements
+- 5VDC Power supply 5A minimum. Should be capable of over 25W
 
-## More Information
-- Project page at [bitaxe.org](https://bitaxe.org)
-- [Open Source Miners United](discord.gg/osmu) Discord chat
-- [building.md](building.md) for PCB ordering tips
-- [assembly.md](assembly.md) for assembly tips
+
