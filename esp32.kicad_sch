@@ -10,6 +10,324 @@
 		(rev "600")
 	)
 	(lib_symbols
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:US1D"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -670,7 +988,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 82.55) (xy 166.37 82.55)
+			(xy 154.94 82.55) (xy 158.75 82.55)
 		)
 		(stroke
 			(width 0)
@@ -680,13 +998,33 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 74.93) (xy 166.37 74.93)
+			(xy 154.94 74.93) (xy 158.75 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "04f01326-1523-4ef0-8e1e-e7066ace7763")
+	)
+	(wire
+		(pts
+			(xy 127 69.85) (xy 121.92 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a997aad-bf42-4b9d-924a-8b26ea31dca4")
+	)
+	(wire
+		(pts
+			(xy 166.37 77.47) (xy 177.8 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b054285-3ea8-4df1-8d51-7875c612350d")
 	)
 	(wire
 		(pts
@@ -697,16 +1035,6 @@
 			(type default)
 		)
 		(uuid "1b56af89-47a8-4b10-9c24-ea5b4296fc86")
-	)
-	(wire
-		(pts
-			(xy 126.365 69.85) (xy 132.08 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e45df6c-e7d6-4073-a517-d30442e77668")
 	)
 	(wire
 		(pts
@@ -730,7 +1058,17 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 100.33) (xy 120.65 100.33)
+			(xy 166.37 74.93) (xy 177.8 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50a3abd8-50d1-43ff-9ef5-5d4f016a07d4")
+	)
+	(wire
+		(pts
+			(xy 106.68 100.33) (xy 109.22 100.33)
 		)
 		(stroke
 			(width 0)
@@ -740,23 +1078,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 80.01) (xy 166.37 80.01)
+			(xy 154.94 80.01) (xy 158.75 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5d4b0d15-7a36-4fec-b18e-de0993e04787")
-	)
-	(wire
-		(pts
-			(xy 154.94 97.79) (xy 166.37 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65e45194-cff6-49be-b9db-d38d787e2679")
 	)
 	(wire
 		(pts
@@ -767,6 +1095,16 @@
 			(type default)
 		)
 		(uuid "83791fe6-0a57-430a-b5e5-ea78ddba5840")
+	)
+	(wire
+		(pts
+			(xy 166.37 82.55) (xy 177.8 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89366140-0de2-4fa7-ba80-06d17ac6c4ce")
 	)
 	(wire
 		(pts
@@ -791,6 +1129,16 @@
 	(wire
 		(pts
 			(xy 128.27 100.33) (xy 129.54 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21fea34-6f86-426f-bc32-fc68c74eedf8")
+	)
+	(wire
+		(pts
+			(xy 116.84 100.33) (xy 123.19 100.33)
 		)
 		(stroke
 			(width 0)
@@ -830,7 +1178,17 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 77.47) (xy 166.37 77.47)
+			(xy 166.37 80.01) (xy 177.8 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c72c0846-ce0d-44c2-9bae-abc666364819")
+	)
+	(wire
+		(pts
+			(xy 154.94 77.47) (xy 158.75 77.47)
 		)
 		(stroke
 			(width 0)
@@ -858,9 +1216,9 @@
 		)
 		(uuid "de8300a0-60c7-497e-b099-c7257e3a4428")
 	)
-	(text "Nerdaxe gamma"
+	(text "Nerdaxe gamma rev 2.3"
 		(exclude_from_sim no)
-		(at 186.69 179.832 0)
+		(at 199.136 180.086 0)
 		(effects
 			(font
 				(size 4 4)
@@ -872,13 +1230,13 @@
 		(uuid "69223251-bfbd-4930-8d39-1dd5b53313fd")
 	)
 	(label "3V3"
-		(at 157.48 97.79 0)
+		(at 125.73 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "14cde2a6-1f50-44c9-872a-1402ed56398d")
 	)
@@ -894,7 +1252,7 @@
 		(uuid "2cbd1ed6-34b0-401b-b96b-98ec75e9e8d8")
 	)
 	(label "TX"
-		(at 159.385 82.55 0)
+		(at 170.815 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -903,17 +1261,6 @@
 			(justify left bottom)
 		)
 		(uuid "3a0fb417-0442-4c15-beb3-7ab716a7803e")
-	)
-	(label "3V3"
-		(at 126.365 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "54131da4-002d-42b8-a4a2-977874c1d5ec")
 	)
 	(label "GND"
 		(at 160.655 92.71 180)
@@ -927,7 +1274,7 @@
 		(uuid "6b93fbd2-5c0d-4cbe-88fa-77cb9448938c")
 	)
 	(label "SDA"
-		(at 159.385 77.47 0)
+		(at 170.815 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -960,7 +1307,7 @@
 		(uuid "bc54d73f-16d1-49cf-9d07-ab6f71f5c3fd")
 	)
 	(label "SCL"
-		(at 159.385 74.93 0)
+		(at 171.45 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -971,7 +1318,7 @@
 		(uuid "ce0f1302-5dbc-4094-963a-23174a7dda4e")
 	)
 	(label "RX"
-		(at 159.385 80.01 0)
+		(at 170.815 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1028,7 +1375,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 118.11 100.33 180)
+		(at 106.68 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1052,7 +1399,7 @@
 	)
 	(hierarchical_label "TX"
 		(shape input)
-		(at 166.37 82.55 0)
+		(at 177.8 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1076,7 +1423,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 166.37 77.47 0)
+		(at 177.8 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1088,19 +1435,19 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 166.37 97.79 0)
+		(at 121.92 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "9b9aa7ec-ac82-4e81-94fe-775b0720efc5")
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 166.37 74.93 0)
+		(at 177.8 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1112,7 +1459,7 @@
 	)
 	(hierarchical_label "RX"
 		(shape input)
-		(at 166.37 80.01 0)
+		(at 177.8 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1124,7 +1471,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 118.11 100.33 180)
+		(at 106.68 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1147,32 +1494,32 @@
 		(uuid "de5303f0-45c6-4e57-aaf6-af1d671489d5")
 	)
 	(symbol
-		(lib_id "Diode:US1D")
-		(at 124.46 100.33 180)
+		(lib_id "Device:R_US")
+		(at 162.56 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6ab2106d-0c66-4cad-8ef5-d016e2283346")
-		(property "Reference" "D2"
-			(at 120.65 102.235 0)
+		(uuid "5ca34b82-a536-4623-a211-8f1484895ebe")
+		(property "Reference" "R27"
+			(at 157.988 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "US1D"
-			(at 128.27 102.235 0)
+		(property "Value" "33"
+			(at 166.37 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 124.46 95.885 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1180,8 +1527,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
-			(at 124.46 100.33 0)
+		(property "Datasheet" "~"
+			(at 162.56 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1190,7 +1537,160 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 100.33 0)
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK" "311-10.0LRCT-ND"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTNO" "RC0402FR-0710RL"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d42a1f04-30f3-4441-a757-7d695b6f936a")
+		)
+		(pin "2"
+			(uuid "cd936a2a-faca-48fe-8844-7d80082e337d")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ca857324-2ec8-447e-bd58-90d0c2e6b6d7"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 129.54 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64be3330-4b6e-4da2-af05-0335790b2594")
+		(property "Reference" "FB3"
+			(at 127.508 67.818 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLM21PG221SN1D"
+			(at 120.904 65.786 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 129.54 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 129.54 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f68d852d-875c-48d1-b91a-830ccb89ecf8")
+		)
+		(pin "2"
+			(uuid "65101ce7-1deb-4b00-bd5d-cdd8f7c73179")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ca857324-2ec8-447e-bd58-90d0c2e6b6d7"
+					(reference "FB3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:US1D")
+		(at 113.03 100.33 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ab2106d-0c66-4cad-8ef5-d016e2283346")
+		(property "Reference" "D2"
+			(at 109.22 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US1D"
+			(at 116.84 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 113.03 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
+			(at 113.03 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1199,7 +1699,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 124.46 100.33 0)
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1208,7 +1708,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 124.46 100.33 0)
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,6 +1732,329 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 125.73 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94c2fdaa-7289-4bbd-a767-10844607df3d")
+		(property "Reference" "FB2"
+			(at 123.698 98.298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MPZ2012S221A"
+			(at 127.762 103.886 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 125.73 102.108 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 125.73 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16308b73-a193-425c-a05a-eac86c0bfa8d")
+		)
+		(pin "2"
+			(uuid "160ec501-dfd3-4a8b-8500-05bff2cbbd69")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ca857324-2ec8-447e-bd58-90d0c2e6b6d7"
+					(reference "FB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afece657-16c6-46f7-af1c-b8a233878334")
+		(property "Reference" "R26"
+			(at 157.988 78.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 166.37 78.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 78.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK" "311-10.0LRCT-ND"
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTNO" "RC0402FR-0710RL"
+			(at 162.56 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b59e591-91f4-452c-93a9-a57455db5759")
+		)
+		(pin "2"
+			(uuid "407ef2e9-70c0-4034-bd0c-4a3530a55d82")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ca857324-2ec8-447e-bd58-90d0c2e6b6d7"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6bb7b8f-734f-4bf1-957e-5d4cd79d05fd")
+		(property "Reference" "R16"
+			(at 157.988 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 166.37 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK" "311-10.0LRCT-ND"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTNO" "RC0402FR-0710RL"
+			(at 162.56 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d432baa9-0898-45bb-b84d-81248eac5cba")
+		)
+		(pin "2"
+			(uuid "5b653ae6-1423-4041-bf75-399f1ccda5c2")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ca857324-2ec8-447e-bd58-90d0c2e6b6d7"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3b22bd0-7e03-4a96-aa74-559b62df3011")
+		(property "Reference" "R20"
+			(at 157.988 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 166.37 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 162.814 76.454 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK" "311-10.0LRCT-ND"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTNO" "RC0402FR-0710RL"
+			(at 162.56 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1b6b820-f83e-41ee-88f8-6d47033fdbe1")
+		)
+		(pin "2"
+			(uuid "13ddddb4-676e-4774-9e37-75c62fe40e23")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ca857324-2ec8-447e-bd58-90d0c2e6b6d7"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "bitaxe:T-Display-S3")
 		(at 157.48 64.77 0)
 		(unit 1)
@@ -1239,10 +2062,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f6bb3b55-ac5d-4652-a83d-a70e87dd9d65")
 		(property "Reference" "U11"
-			(at 143.51 62.23 0)
+			(at 143.256 59.182 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1250,7 +2072,7 @@
 			)
 		)
 		(property "Value" "T-Display-S3"
-			(at 143.51 64.77 0)
+			(at 143.764 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)

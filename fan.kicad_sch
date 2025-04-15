@@ -5,7 +5,7 @@
 	(uuid "e3011397-6e70-47ae-93ca-7e99c3d9ef05")
 	(paper "A")
 	(title_block
-		(title "bitaxeGamma")
+		(title "NerdaxeGamma")
 		(date "2024-08-16")
 		(rev "600")
 	)
@@ -649,6 +649,154 @@
 				)
 			)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers hide)
 			(pin_names
@@ -1064,16 +1212,16 @@
 		(uuid "5f300e37-7aa6-42c2-b324-35b08d49c436")
 	)
 	(junction
+		(at 124.46 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85747d71-2bb0-4c49-bb5a-91dbb904a572")
+	)
+	(junction
 		(at 106.68 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91058259-1fb3-49e2-bfd8-c62282dfafc6")
-	)
-	(junction
-		(at 147.32 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e0aa163-60cc-467d-93bf-b8572bc79c84")
 	)
 	(junction
 		(at 144.78 114.3)
@@ -1131,13 +1279,13 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 111.76) (xy 147.32 111.76)
+			(xy 130.81 66.04) (xy 124.46 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f00c769-8977-4354-96ce-71683787d219")
+		(uuid "0e5077b7-33fa-4c60-86e7-056c503e241b")
 	)
 	(wire
 		(pts
@@ -1211,7 +1359,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 73.66) (xy 132.08 73.66)
+			(xy 109.22 66.04) (xy 114.3 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1231,6 +1379,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 114.3) (xy 134.62 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695c0886-a8f2-46f7-b87c-4aaad6f66bbb")
+	)
+	(wire
+		(pts
 			(xy 191.77 81.28) (xy 191.77 83.82)
 		)
 		(stroke
@@ -1238,6 +1396,16 @@
 			(type default)
 		)
 		(uuid "6d2e21ea-65e8-425f-afcd-b6049bfcb2e0")
+	)
+	(wire
+		(pts
+			(xy 119.38 66.04) (xy 124.46 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70236911-9fe6-4e54-b48a-63f0efdbdf40")
 	)
 	(wire
 		(pts
@@ -1371,6 +1539,26 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 73.66) (xy 132.08 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b28ce407-e3e9-4bdd-98e1-dc51ec8d39d0")
+	)
+	(wire
+		(pts
+			(xy 119.38 73.66) (xy 124.46 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6701dc0-bd07-4bd8-872b-a947e41843d3")
+	)
+	(wire
+		(pts
 			(xy 157.48 83.82) (xy 191.77 83.82)
 		)
 		(stroke
@@ -1431,16 +1619,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 114.3) (xy 144.78 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0ce31b8-c637-4050-b583-ffea78bd3c5c")
-	)
-	(wire
-		(pts
 			(xy 134.62 127) (xy 144.78 127)
 		)
 		(stroke
@@ -1481,6 +1659,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 73.66) (xy 130.81 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e345412f-493b-4359-9c3b-499e80b806bf")
+	)
+	(wire
+		(pts
 			(xy 106.68 83.82) (xy 106.68 86.36)
 		)
 		(stroke
@@ -1488,6 +1676,16 @@
 			(type default)
 		)
 		(uuid "e5ab3d00-8684-405b-ae08-1c94d0eb9f47")
+	)
+	(wire
+		(pts
+			(xy 139.7 114.3) (xy 144.78 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb3d019c-711d-43b5-90c2-988563827545")
 	)
 	(wire
 		(pts
@@ -1539,9 +1737,9 @@
 		)
 		(uuid "fbeb9c2f-1fe2-4a1e-b7fb-21ab14e608be")
 	)
-	(text "Nerdaxe gamma"
+	(text "Nerdaxe gamma rev 2.3"
 		(exclude_from_sim no)
-		(at 187.198 179.578 0)
+		(at 198.882 178.816 0)
 		(effects
 			(font
 				(size 4 4)
@@ -1554,7 +1752,7 @@
 	)
 	(text "EMC2101 Controls the fan, and reads the ASIC chip temperature"
 		(exclude_from_sim no)
-		(at 114.3 63.5 0)
+		(at 114.554 53.086 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1696,7 +1894,7 @@
 		(uuid "6eec903f-96f0-4ee8-8e4f-9866a5101010")
 	)
 	(label "3V3"
-		(at 125.73 73.66 0)
+		(at 110.49 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1707,7 +1905,7 @@
 		(uuid "98e9f40e-00bd-4056-a7b4-224d5a9660df")
 	)
 	(label "5V"
-		(at 138.43 114.3 0)
+		(at 132.08 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1716,6 +1914,17 @@
 			(justify left bottom)
 		)
 		(uuid "9e8549f7-80f9-4673-9e2a-55f919f42ae8")
+	)
+	(label "GND"
+		(at 119.38 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f49fda9-a3e8-4c62-972f-1cb47e01611f")
 	)
 	(label "SDA"
 		(at 165.1 76.2 0)
@@ -1785,7 +1994,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 135.89 114.3 180)
+		(at 129.54 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1833,7 +2042,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 125.73 73.66 180)
+		(at 109.22 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1856,35 +2065,33 @@
 		(uuid "f89e2a71-fb77-4e7b-bbb8-97c46bdcc78c")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 168.91 109.22 90)
-		(mirror x)
+		(lib_id "Device:FerriteBead_Small")
+		(at 137.16 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "06eb653b-c15c-416b-be86-59e88d0695a0")
-		(property "Reference" "TP38"
-			(at 162.56 109.22 90)
+		(uuid "0485a51f-e813-42b2-8abf-daaf2501a0b9")
+		(property "Reference" "FB6"
+			(at 139.446 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 163.195 110.4899 90)
+		(property "Value" "BLM21PG221SN1D"
+			(at 133.096 117.602 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 168.91 114.3 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 137.16 116.078 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1893,7 +2100,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.91 114.3 0)
+			(at 137.16 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1901,8 +2108,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 168.91 109.22 0)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 137.16 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,12 +2118,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9cdf6f5-db2c-4466-a095-1509db66167f")
+			(uuid "7042b456-10b7-4578-b24f-e152dac2e58e")
+		)
+		(pin "2"
+			(uuid "503a203c-ad99-423e-bd1c-a541cc57a36e")
 		)
 		(instances
-			(project "bitaxeGamma"
+			(project "nerdaxe-gamma_v2.2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8e8832ea-6bf1-49d2-b3a5-32a207f555d2"
-					(reference "TP38")
+					(reference "FB6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 116.84 66.04 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a608fba-5550-45a1-a0d0-3100510ca51f")
+		(property "Reference" "FB8"
+			(at 119.126 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLM21PG221SN1D"
+			(at 112.776 69.342 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 116.84 67.818 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76c7ee53-1537-4217-9c43-06003f5e98b3")
+		)
+		(pin "2"
+			(uuid "0bf8a127-8691-432e-a5c8-f7acfe0d9804")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8e8832ea-6bf1-49d2-b3a5-32a207f555d2"
+					(reference "FB8")
 					(unit 1)
 				)
 			)
@@ -2615,6 +2893,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 124.46 69.85 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b12f864-85c8-477b-94f0-a5bd356c0658")
+		(property "Reference" "C23"
+			(at 128.905 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 130.81 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DK" "1276-1234-1-ND"
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTNO" "CL05A104KO5NNNC"
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f68aa91-1333-46b5-9cad-af91e80e3613")
+		)
+		(pin "2"
+			(uuid "2e98282e-c641-4e5c-8ba9-78c38a00d241")
+		)
+		(instances
+			(project "nerdaxe-gamma_v2.2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8e8832ea-6bf1-49d2-b3a5-32a207f555d2"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 82.55 76.2 180)
 		(unit 1)
@@ -2764,73 +3130,6 @@
 			(project "bitaxeGamma"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8e8832ea-6bf1-49d2-b3a5-32a207f555d2"
 					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 135.89 111.76 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "dbe78ea1-de61-4cfe-8d9a-6a7db6a2845a")
-		(property "Reference" "TP37"
-			(at 129.54 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 130.175 113.0299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 135.89 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8220d9cc-4dbd-4ca0-b3b9-8e7032d8c315")
-		)
-		(instances
-			(project "bitaxeGamma"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8e8832ea-6bf1-49d2-b3a5-32a207f555d2"
-					(reference "TP37")
 					(unit 1)
 				)
 			)

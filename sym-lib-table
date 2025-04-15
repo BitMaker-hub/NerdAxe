@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "bitaxe")(type "KiCad")(uri "${KIPRJMOD}/bitaxe.kicad_sym")(options "")(descr ""))
+  (lib (name "nerdaxe")(type "KiCad")(uri "${KIPRJMOD}/bitaxe.pretty/NFM21PC105B1C3D.kicad_sym")(options "")(descr ""))
 )

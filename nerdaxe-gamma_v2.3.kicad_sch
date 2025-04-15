@@ -7,7 +7,7 @@
 	(title_block
 		(title "NerdaxeGamma")
 		(date "2024-08-16")
-		(rev "rev1")
+		(rev "rev2.2")
 	)
 	(lib_symbols
 		(symbol "Connector:Barrel_Jack_Switch"
@@ -220,108 +220,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -672,12 +570,6 @@
 		(uuid "a69d1bb4-c5be-4af7-9880-f33c1c964215")
 	)
 	(junction
-		(at 80.01 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bf34dd20-06f4-4f85-8622-0168e6537611")
-	)
-	(junction
 		(at 35.56 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -688,12 +580,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6d94326-b3b8-44e3-95be-698fd44134ef")
-	)
-	(junction
-		(at 80.01 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dfd9251c-91ec-4cdf-8988-2e393b69a6c3")
 	)
 	(junction
 		(at 35.56 163.83)
@@ -743,16 +629,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 48.26) (xy 81.28 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2053dc29-65a9-498f-a8d1-8d1795446500")
-	)
-	(wire
-		(pts
 			(xy 105.41 45.72) (xy 113.03 45.72)
 		)
 		(stroke
@@ -793,7 +669,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 43.18) (xy 80.01 43.18)
+			(xy 72.39 43.18) (xy 113.03 43.18)
 		)
 		(stroke
 			(width 0)
@@ -863,7 +739,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 48.26) (xy 80.01 48.26)
+			(xy 73.66 48.26) (xy 81.28 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1173,16 +1049,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 43.18) (xy 113.03 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f168a877-7c07-4079-ad4a-1c8d06eeb2c8")
-	)
-	(wire
-		(pts
 			(xy 149.86 104.14) (xy 149.86 87.63)
 		)
 		(stroke
@@ -1201,9 +1067,9 @@
 		)
 		(uuid "fb150e19-1ef3-4ea1-8a17-ed02fd7c8667")
 	)
-	(text "Nerdaxe gamma"
+	(text "Nerdaxe gamma v2.2"
 		(exclude_from_sim no)
-		(at 186.944 179.832 0)
+		(at 194.564 179.578 0)
 		(effects
 			(font
 				(size 4 4)
@@ -1674,138 +1540,6 @@
 			(project "bitaxeGamma"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "FID6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 80.01 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2d5c8dc1-a7b2-4a2e-9713-7f4fc272efda")
-		(property "Reference" "TP1"
-			(at 80.01 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 81.2799 37.465 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 85.09 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "508eb2bd-da4b-4a01-8e79-95f28f36f21d")
-		)
-		(instances
-			(project "bitaxeGamma"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 80.01 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "418f2cde-f91e-4839-acdd-4673be10cedc")
-		(property "Reference" "TP2"
-			(at 80.01 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 78.7401 53.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 74.93 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8963e587-92ed-49be-9a25-baa69758d7ce")
-		)
-		(instances
-			(project "bitaxeGamma"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -2862,7 +2596,7 @@
 			(uuid "5c39b7d4-e0ec-4681-92dc-1ada4017dc95")
 		)
 		(instances
-			(project "nerdaxe-gamma"
+			(project "nerdaxe-gamma_v2.2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "4")
 				)
@@ -2960,7 +2694,7 @@
 			(uuid "8347ed9c-b20f-4899-9279-392b6e9d4cf2")
 		)
 		(instances
-			(project "nerdaxe-gamma"
+			(project "nerdaxe-gamma_v2.2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "5")
 				)
@@ -3006,7 +2740,7 @@
 			)
 			(uuid "cabb89b1-9d2e-440d-94cb-0b6c3180648c")
 		)
-		(pin "VIN" input
+		(pin "V_JACK" input
 			(at 113.03 43.18 180)
 			(effects
 				(font
@@ -3077,7 +2811,7 @@
 			(uuid "cea3d115-b7dc-46bf-bd36-089b43c92dc1")
 		)
 		(instances
-			(project "nerdaxe-gamma"
+			(project "nerdaxe-gamma_v2.2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "2")
 				)
@@ -3215,7 +2949,7 @@
 			(uuid "646a20c3-2c54-4b89-b96f-4f3825b4b1fd")
 		)
 		(instances
-			(project "nerdaxe-gamma"
+			(project "nerdaxe-gamma_v2.2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "3")
 				)
